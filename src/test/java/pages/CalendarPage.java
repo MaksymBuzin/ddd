@@ -56,4 +56,7 @@ public class CalendarPage {
 
     @FindBy(id = "num-days")
     public WebElement datePcikerMessage;
+
+    @FindBy(xpath = "//div[contains(@class,'month-container')]")
+    public WebElement monthContainer;
 }

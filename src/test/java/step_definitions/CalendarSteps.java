@@ -34,28 +34,31 @@ public class CalendarSteps implements CommonPage {
 
     }
 
-    @And("User picks {string}")
-    public void userPicks(String data) {
-        switch (data) {
-            case "Start date:":
-                WebDriverManager.click(calendarPage.startDate);
-                WebDriverManager.click(calendarPage.nextDayStartDay);
-                break;
-            case "End date:":
-                WebDriverManager.click(calendarPage.endDatee);
-                try {
-                    WebDriverManager.click(calendarPage.threeDayAheadEndDate);
-                    break;
-
-                } catch (Exception e) {
-                    WebDriverManager.click(calendarPage.nextMothBtn);
-                    WebDriverManager.click(calendarPage.threeDayAheadEndDate);
-                    break;
-                }
-        }
-
+    @Then("Verify drop down calendar is present")
+    public void verify_drop_down_calendar_is_present() {
+        Assert.assertTrue(WebDriverManager.isDisplayed(calendarPage.monthContainer));
     }
 
+    @Then("Verify {string} button is displayed")
+    public void verify_button_is_displayed(String btn) {
+        Assert.assertTrue(WebDriverManager.isDisplayed(By.xpath(String.format(XPATH_TEMPLATE_BUTTON, btn))));
+    }
+
+
+    @When("User picks Start date and End date")
+    public void userPicksStartDateAndEndDate() {
+        WebDriverManager.click(calendarPage.startDate);
+        WebDriverManager.click(calendarPage.nextDayStartDay);
+
+        WebDriverManager.click(calendarPage.endDatee);
+        try {
+            WebDriverManager.click(calendarPage.threeDayAheadEndDate);
+
+        } catch (Exception e) {
+            WebDriverManager.click(calendarPage.nextMothBtn);
+            WebDriverManager.click(calendarPage.threeDayAheadEndDate);
+        }
+    }
 
     @When("User clicks on {string} button")
     public void user_clicks_on_button(String btn) {
@@ -65,9 +68,24 @@ public class CalendarSteps implements CommonPage {
     @Then("Verify message is correct")
     public void verify_message_is() throws ParseException {
         String dates[] = calendarPage.getStartEndDates();//call method
-        String expectedRes = "There are 2 days between "+ dates[0] +" and " + dates[1];
+        String expectedRes = "There are 2 days between " + dates[0] + " and " + dates[1];
 
-        Assert.assertEquals(expectedRes,WebDriverManager.getText(calendarPage.datePcikerMessage));
+        Assert.assertEquals(expectedRes, WebDriverManager.getText(calendarPage.datePcikerMessage));
 
+    }
+
+    @When("User clicks {string} option")
+    public void userClicksOption(String btn) {
+        switch (btn) {
+            case "Start date:":
+                WebDriverManager.click(calendarPage.startDate);
+                break;
+            case "End date:":
+                WebDriverManager.click(calendarPage.endDatee);
+                break;
+            default:
+                System.out.println("the button doesn't exist");
+
+        }
     }
 }
