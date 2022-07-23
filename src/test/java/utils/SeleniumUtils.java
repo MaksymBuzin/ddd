@@ -1,5 +1,6 @@
 package utils;
 
+import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -64,6 +65,10 @@ public class SeleniumUtils {
             if (!each.equals(currentWindowID))
                 WebDriverManager.getDriver().switchTo().window(each);
         }
+    }
+
+    public static void verifyTitleOfThePageIs(String title) {
+        Assert.assertEquals(title,WebDriverManager.getDriver().getTitle());
     }
 
     public static String getTodaysDate() {

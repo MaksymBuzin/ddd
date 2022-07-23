@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         glue = {"step_definitions"},
         stepNotifications = true,
         dryRun = false,
-        tags = "@Calendar"
+        tags = "@home"
 )
 public class CukesRunner {
 }

@@ -22,7 +22,7 @@ public class CalendarSteps implements CommonPage {
         calendarPage = new CalendarPage();
     }
 
-    @Given("User clicks on {string} link on home page")
+    @Given("User clicks on {string}")
     public void user_clicks_on_link_on_home_page(String page) {
         WebDriverManager.click(By.xpath(String.format(XPATH_TEMPLATE_LINKTEXT, page)));
 
@@ -87,5 +87,10 @@ public class CalendarSteps implements CommonPage {
                 System.out.println("the button doesn't exist");
 
         }
+    }
+
+    @Then("Verify title of the page is {string}")
+    public void verifyTitleOfThePageIs(String title) {
+        Assert.assertEquals(title,WebDriverManager.getDriver().getTitle());
     }
 }

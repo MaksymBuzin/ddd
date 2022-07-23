@@ -10,5 +10,6 @@ public class HomePage {
         PageFactory.initElements(WebDriverManager.getDriver(), this);
     }
 
-
+ @FindBy(className = "header-text")
+    public WebElement header;
 }

@@ -2,7 +2,7 @@
 Feature: Calendar related scenarios
 
   Background:
-    Given User clicks on "Calendar" link on home page
+    Given User clicks on "Calendar"
 
   Scenario: Verify calendar displays correct today' date
     Then Verify user sees correct date on calendar page
