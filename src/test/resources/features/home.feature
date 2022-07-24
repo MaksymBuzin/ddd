@@ -36,3 +36,13 @@ Feature: Home page related scenarios
       | 2   max  |
       | 3   max |
 
+
+
+  @Git
+  Scenario Outline: Verify Git 
+    Then Verify "<numGit>" is displayed
+    Examples:
+      | numGit     |
+      | 1   git  |
+      | 2   git  |
+      | 3   git |
