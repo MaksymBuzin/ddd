@@ -27,4 +27,5 @@ Feature: Home page related scenarios
       | Saucedemo           | Swag Labs                                        |
       | Shopping Cart       | Typescript React Shopping cart                   |
 
-      good night
+   good night
+   sleep well
