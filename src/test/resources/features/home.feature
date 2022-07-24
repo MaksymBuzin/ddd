@@ -47,4 +47,4 @@ Feature: Home page related scenarios
       | 2   git  |
       | 3   git |
       
-      Git is done
+      The most important code line 50
