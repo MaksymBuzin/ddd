@@ -32,9 +32,15 @@ Feature: Home page related scenarios
     When I go
     And I sit
     Then Verify
-    
+
      Scenario: Verify home page header
     Then Verify "Automation with Selenium" header is displayed
     When I gooo go
     And I sittt sit
     Then Verifyyy yy
+
+  Scenario: Verify home page header
+    Then Verify "Automation with Selenium" header is displayed
+    When I gooo
+    And I sittt
+    Then Verifyyy
