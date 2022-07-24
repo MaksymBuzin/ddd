@@ -27,7 +27,4 @@ Feature: Home page related scenarios
       | Saucedemo           | Swag Labs                                        |
       | Shopping Cart       | Typescript React Shopping cart                   |
 
-  Scenario: From git
-  When Git
-  And Git2
-  Then Git3
+
