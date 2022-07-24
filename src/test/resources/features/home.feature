@@ -31,7 +31,13 @@ Scenario: Verify home page header
   Then Verify "Automation with Selenium" header is displayed
 
 
+done
+for today
+no problem
+dude
+ok ok
+
 3+3=6
 5+5=10
 6+6=12
-
+goodnight
