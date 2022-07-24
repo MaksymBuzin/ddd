@@ -31,8 +31,7 @@ Scenario: Verify home page header
   Then Verify "Automation with Selenium" header is displayed
 
 
+3+3=6
+5+5=10
+6+6=12
 
-not bug
-  good job
-  perfect job
-   hjk
