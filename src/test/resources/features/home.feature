@@ -27,11 +27,4 @@ Feature: Home page related scenarios
       | Saucedemo           | Swag Labs                                        |
       | Shopping Cart       | Typescript React Shopping cart                   |
 
-  Scenario: From git
-  When I go there
-  And I do something
-  Then Verify something
 
-  When Git
-  And Git2
-  Then Git3
