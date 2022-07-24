@@ -32,3 +32,5 @@ Scenario: Verify home page header
 
 
 done
+for today
+ok
