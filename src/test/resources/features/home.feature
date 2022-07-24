@@ -28,3 +28,13 @@ Feature: Home page related scenarios
       | Shopping Cart       | Typescript React Shopping cart                   |
 
 
+
+
+  @Git
+  Scenario Outline: Verify Git 
+    Then Verify "<numGit>" is displayed
+    Examples:
+      | numGit     |
+      | 1   git  |
+      | 2   git  |
+      | 3   git |
