@@ -29,4 +29,6 @@ Feature: Home page related scenarios
 
 Scenario: Verify home page header
   Then Verify "Automation with Selenium" header is displayed
-
+ When I go ther
+ And I sit here 
+ Then Verify me
