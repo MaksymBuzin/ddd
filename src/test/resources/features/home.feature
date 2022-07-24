@@ -31,3 +31,7 @@ Feature: Home page related scenarios
   When I go there
   And I do something
   Then Verify something
+
+  When Git
+  And Git2
+  Then Git3
