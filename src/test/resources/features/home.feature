@@ -46,3 +46,5 @@ Feature: Home page related scenarios
       | 1   git  |
       | 2   git  |
       | 3   git |
+
+    Scenario: The last Max
