@@ -28,3 +28,6 @@ Feature: Home page related scenarios
       | Shopping Cart       | Typescript React Shopping cart                   |
 
   Scenario: From git
+  When Git
+  And Git2
+  Then Git3
