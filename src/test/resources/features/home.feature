@@ -28,3 +28,6 @@ Feature: Home page related scenarios
       | Shopping Cart       | Typescript React Shopping cart                   |
 
   Scenario: From git
+  When I go there
+  And I do something
+  Then Verify something
