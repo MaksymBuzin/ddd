@@ -30,6 +30,5 @@ Feature: Home page related scenarios
 Scenario: Verify home page header
   Then Verify "Automation with Selenium" header is displayed
 
-  Scenario: 8080
-    Given Port to open
+
 

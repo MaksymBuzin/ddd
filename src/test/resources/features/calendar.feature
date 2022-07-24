@@ -23,5 +23,5 @@ Feature: Calendar related scenarios
     And User clicks on "Submit" button
     Then Verify message is correct
     
-    Scenario: 9090
+
 
