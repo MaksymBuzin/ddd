@@ -34,3 +34,4 @@ Scenario: Verify home page header
 
 bug
   good job
+  perfect job
