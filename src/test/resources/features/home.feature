@@ -27,6 +27,14 @@ Feature: Home page related scenarios
       | Saucedemo           | Swag Labs                                        |
       | Shopping Cart       | Typescript React Shopping cart                   |
 
+  @Max
+  Scenario Outline: Verify Max branch
+    Then Verify "<numbers>" is displayed
+    Examples:
+      | link     |
+      | 1   max  |
+      | 2   max  |
+      | 3   max |
 
 
 
