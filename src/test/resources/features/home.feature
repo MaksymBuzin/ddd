@@ -27,6 +27,8 @@ Feature: Home page related scenarios
       | Saucedemo           | Swag Labs                                        |
       | Shopping Cart       | Typescript React Shopping cart                   |
 
-Scenario: Verify home page header
-  Then Verify "Automation with Selenium" header is displayed
-
+  Scenario: Verify home page header
+    Then Verify "Automation with Selenium" header is displayed
+    When I go
+    And I sit
+    Then Verify
